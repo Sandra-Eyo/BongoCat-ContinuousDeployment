@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "Bongocat.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/Bongocat.html"
+    }
+  ]
+}
