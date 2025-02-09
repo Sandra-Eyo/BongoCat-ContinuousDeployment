@@ -16,7 +16,7 @@ jobs:
         run: npm install -g vercel
 
       - name: 🌍 Desplegar en Vercel
-        run: vercel --prod --yes --token ${{ secrets.VERCEL_TOKEN }}
+        run: vercel --prod --yes --token ${{ secrets.VERCEL_TOKEN }} --name bongocat-continuousdeployment
 
   push_to_docker_hub:
     runs-on: ubuntu-latest
